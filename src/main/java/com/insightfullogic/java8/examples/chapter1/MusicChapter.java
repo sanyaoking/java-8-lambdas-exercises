@@ -7,6 +7,8 @@ package com.insightfullogic.java8.examples.chapter1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -24,7 +26,8 @@ public abstract class MusicChapter {
     }
 
     private void loadData(String file) {
-        
+    	SampleData.threeArtists().forEach((Artist action)->{artists.add(action);});
+    	SampleData.threeAlbum().forEach((Album action)->{albums.add(action);});
     }
     
 }

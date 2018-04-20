@@ -30,9 +30,16 @@ public class SampleData {
     public static Stream<Artist> threeArtists() {
         return Stream.of(johnColtrane, johnLennon, theBeatles);
     }
-
+    
+    public static Stream<Album> threeAlbum(){
+    	return Stream.of(aLoveSupreme,sampleShortAlbum,manyTrackAlbum);
+    }
+    
     public static List<Artist> getThreeArtists() {
         return Arrays.asList(johnColtrane, johnLennon, theBeatles);
     }
 
+    public static List<Album> getThreeAlbums(){
+    	return Arrays.asList(aLoveSupreme,sampleShortAlbum,manyTrackAlbum);
+    }
 }
